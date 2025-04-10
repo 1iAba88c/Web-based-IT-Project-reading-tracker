@@ -1,0 +1,123 @@
+html, body {
+    height: 100%; /* Ensure the body covers the full height of the viewport */
+    margin: 0; /* Remove default margin */
+  }
+  
+  body {
+    background-image: radial-gradient(at left bottom, rgb(209, 213, 219), rgb(192, 38, 211), rgb(234, 88, 12));
+    font-family: 'Luminari', fantasy; /* Keep the same font */
+  }
+  
+  
+  .App-header {
+    display: flex;
+    align-items: center;
+    background-color: hsl(292deg 84% 5% / 50%);
+    border-radius: 0.9rem;
+    margin: 40px;
+    height:250px
+  }
+  
+  .resized-image {
+    display: flex;
+    width: 250px;
+    height: auto;
+    
+  }
+  
+  
+  .App-header h1 {
+    display: flex;
+    font-size: 70px;
+    font-weight: lighter;
+    color: rgb(248, 229, 239);
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .Read-container {
+    background-color: white; /* White background for the content box */
+    align-items: center;
+    width: 1000px;
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  .taskbar {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 60px;
+  }
+  
+  .taskbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .taskbar li {
+    font-size: 24px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .taskbar a{
+    color:white;
+  }
+  
+  .taskbar li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .book-item {
+    cursor: pointer;
+    padding: 12px;
+
+  }
+
+  .book-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  }
+
+  .modal-content {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .modal-content button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #cd1111;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  }
